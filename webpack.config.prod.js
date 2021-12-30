@@ -21,10 +21,10 @@ module.exports = {
     ], //自动生成css
     module: {
         rules: [
+            ...base.module.rules,
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, "css-loader"],
-                // use: ['style-loader', 'css-loader']
             }
         ]
     }

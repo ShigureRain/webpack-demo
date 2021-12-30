@@ -20,6 +20,7 @@ module.exports = {
     },  //快速调试
     module: {
         rules: [
+            ...base.module.rules,
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
